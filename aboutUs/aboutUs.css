@@ -1,0 +1,40 @@
+body {
+    /*display: grid;*/
+    background: rgb(36, 34, 34);
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+
+}
+
+.nxt{
+    color: rgb(218, 170, 74);
+}
+
+.example{
+    color: rgb(218, 170, 74);
+}
+
+.qr{
+    color: rgb(218, 170, 74);
+}
+
+.application{
+    color: rgb(218, 170, 74);
+}
+
+.dots{
+    text-align: center;
+}
+
+.arrow{
+    font-size: 3em;
+    margin: auto;
+    text-align: left;
+    cursor: pointer;
+
+}

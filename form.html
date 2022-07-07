@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" type="image/png" href="images/iconmole.png"/>
+    <title>THE MOLE</title>
+</head>
+<body onload="giveUniqueCode()">
+    <h1>THE MOLE</h1>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form action="connect.php" method="post">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Organisation's Name</span>
+                <input type="text" placeholder="Enter The Organisation's Name" required name="OrgName">
+              </div>
+              <div class="input-box">
+                <span class="details">Admin's Name</span>
+                <input type="text" placeholder="Enter The Admin's Name" required name="AdminName">
+              </div>
+              <div class="input-box">
+                <span class="details">Organisation's Email</span>
+                <input type="text" placeholder="Enter The Organisation's Email" required name="OrgEmail">
+              </div>
+              <div class="input-box">
+                <span class="details">Your Organisation's Unique Code</span>
+                <input type="text" readonly required id="uniquecode" name="OrgCode">
+              </div>
+              <div class="input-box">
+                <span class="details">Type Of Organisation</span>
+                <input type="text" placeholder="Example, 'School', 'Hospital' ..." required name="TypeOfOrg">
+              </div>
+              <div class="input-box">
+                <span class="details">Organisation's Password (Not Less Than 4 Characters)</span>
+                <input type="text" placeholder="Organisation's Password" required name="OrgPassword">
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1" value="m">
+              <input type="radio" name="gender" id="dot-2" value="f">
+              <input type="radio" name="eender" id="dot-3" value="o">
+              <span class="gender-title">Gender Of The Admin</span>
+              <div class="category">
+               <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+               <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+
+</body>
+<script src="form.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="membReg.css">
+    <link rel="shortcut icon" type="image/png" href="images/iconmole.png"/>
+    <title>THE MOLE</title>
+</head>
+<body>
+    <h1>THE MOLE</h1>
+
+    <div class="container">
+        <div class="title">Registration As A Member</div>
+        <div class="content">
+          <form action="membReg.php" method="post">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Your Full Name" required name="MembName">
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Your Email" required name="MembEmail">
+              </div>
+              <div class="input-box">
+                <span class="details">Password (Not Less Than 4 Characters)</span>
+                <input type="text" placeholder="Your Password" required name="MembPassword">
+              </div>
+              <div class="input-box">
+                <span class="details">Your Organisation's Unique Code</span>
+                <input type="text"  required id="uniquecode" name="MembOrgCode" placeholder="Organisation's Unique Code">
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Your Identity Code</span>
+                <input type="text" placeholder="Your Identity Code" required name="MembIdenCode">
+              </div>
+            </div>
+            
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+
+</body>
+</html>

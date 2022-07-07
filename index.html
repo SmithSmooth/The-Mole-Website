@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="images/iconmole.png"/>
+    
+    <title>THE MOLE</title>
+</head>
+<body id="body" >
+    
+<div class="top">
+<h1 class="h1">THE MOLE</h1>
+
+<nav class="topline" onclick="openNavbar()" id="topline">
+    <div></div>
+    <div></div>
+    <div></div>
+</nav>
+
+<nav class="nav">
+    <h3 onclick="getStarted()">Get Started</h3>
+    <h3 onclick="openAboutUs()">About Us</h3>
+    <!--<h3 onclick="openContactUs()">Contact Us</h3>-->
+</nav>
+</div>
+
+
+<div class="welcome">
+    <h2>WELCOME TO THE MOLE.</h2>
+    <h4>We have the best solution ,cheap and accurate system to keep track 
+        of your personnel. </h4>
+</div>
+<div class="ab">
+
+    <div id="aboutUs">
+        <h2>About Us</h2>
+          <div>
+            <p id="about-us">
+                How many times  do you have to fill in bookswhen checking for work?
+                That's where <strong>The Mole</strong> comes in. Technically <strong>The Mole</strong> is a platform 
+                that tends to make management much better and easier. It is 
+                designed to help you keep attendance records of an organisation or 
+                institute's personnel...
+            </p>  
+            <a id="learn-more" href="./aboutUs/aboutUs.html">Learn More</a>
+          </div>
+
+          
+
+
+    </div>
+
+    <div id="ContactUs">
+        
+        <h2 >Contact Us</h2>
+        
+        <form action="sendMessage.php" method="post">
+            <div>
+                <label >Your Name : </label>
+            <input type="text" name="nameOfSender" id="nameOfSender" required placeholder="Your Name">
+            </div>
+            
+            <div>
+                <label for="emailOfSender">Your Email : </label>
+            <input type="Email" name="emailOfSender" id="emailOfSender" required placeholder="Your Email">
+            </div>
+            <div>
+            <label >Your Message : </label>
+           <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <button type="submit" id="submitbtn" >Send Message</button>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+<script src="main.js"></script> 
+
+
+</html>
